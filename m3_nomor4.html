@@ -1,0 +1,45 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Praktikum SIG WEB Minggu Ke-3</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Bilangan Prima</h1>
+    <p></p>
+    Masukan angka: <input type="text" id="input">
+    <button type="button" onclick="CalcPrime()">Enter</button>
+    <br/><br/>
+    Hasil bilangan prima: <span id="hasil"></span>
+
+    <script>
+        function CalcPrime() {
+            var a = parseInt(document.getElementById("input").value);
+            var hasilElem = document.getElementById("hasil");
+            hasilElem.innerHTML = ""; // Menghapus hasil sebelumnya
+
+            if (isNaN(a) || a < 2) {
+                hasilElem.innerHTML = "Isi angka lebih dari 1!";
+                return;
+            }
+
+            var primes = [];
+            for (var i = 2; i <= a; i++) {
+                var isPrime = true;
+                for (var j = 2; j * j <= i; j++) {
+                    if (i % j === 0) {
+                        isPrime = false;
+                        break; // Berhenti lebih cepat jika sudah terbukti bukan prima
+                    }
+                }
+                if (isPrime) {
+                    primes.push(i);
+                }
+            }
+
+            hasilElem.innerHTML = primes.join(", ");
+        }
+    </script>
+</body>
+</html>
+

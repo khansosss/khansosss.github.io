@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Praktikum SIG WEB Minggu Ke-3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Hitung faktorial dari input</h1>
+	<h3>Masukkan sembarang angka</h3>	
+    <script>
+        function hitungFaktorial() {
+            var inputAngka = document.getElementById("angka").value;
+            var faktorial = 1;
+
+            for (var i = 1; i <= inputAngka; i++) {
+                faktorial *= i;
+            }
+
+            document.getElementById("hasil").innerHTML = "angka faktorial dari " + inputAngka + " adalah : " + faktorial;
+        }
+    </script>
+    
+    <input type="number" id="angka"></input>
+    <button onclick="hitungFaktorial()">click</button>
+    <p id="hasil"></p>
+</body>
+</html>
