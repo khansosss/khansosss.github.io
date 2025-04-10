@@ -21,7 +21,7 @@
 <section id="landing-page" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
     <h1>Khansa Puspitasari</h1>
     <p>Ujian Tengah Semester Prak SIG Web</p>
-    <a class="btn btn-primary" href="#resume">Mulai</a>
+    <a class="btn btn-primary" href="Praktikum">Mulai</a>
 </section>
 
 <!-- Navigation -->
@@ -33,18 +33,16 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#Praktikum">Praktikum</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Website">Website</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Tabel">Tabel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Peta">Peta</a></li>
                 </ul>
             </div>
         </nav>
         <div class="container-fluid p-4">
             <!-- Praktikum Section -->
-            <section class="resume-section" id="Praktikum">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Github</h2>
+            <section class="uts-section" id="Praktikum">
+                <div class="uts-section-content">
+                    <h2 class="mb-5">Prakikum SIG Web</h2>
                     <ul class="fa-ul mb-0">
                         <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Tugas Minggu ke-2</li>
                         <table class="table table-bordered w-75">
@@ -86,8 +84,8 @@
             </section>
 
             <!-- Website Section -->
-            <section class="resume-section" id="Website">
-                <div class="resume-section-content">
+            <section class="uts-section" id="Website">
+                <div class="uts-section-content">
                     <h2 class="mb-5">Praktikum SIG Web</h2>
                     <ul class="fa-ul">
                         <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Teknik Geodesi UGM</li>
@@ -123,7 +121,7 @@
 <!-- Peta -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">D.I. Yogyakarta</a>
+        <a class="navbar-brand" href="#">UGM</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -137,6 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+    
 
     var map = L.map('map').setView([-7.79558, 110.36949], 10);
 
@@ -147,17 +146,18 @@
 
     var baseMaps = { "Citra Satelit": esri, "Carto": carto };
 
-    var gunkid = L.marker([-7.96, 110.60]).bindPopup('Gunung Kidul'),
-        sleman = L.marker([-7.71, 110.35]).bindPopup('Sleman'),
-        kupro = L.marker([-7.85, 110.15]).bindPopup('Kulon Progo'),
-        mbantul = L.marker([-7.88, 110.33]).bindPopup('Bantul'),
-        yog = L.marker([-7.79, 110.39]).bindPopup('Yogyakarta');
+    var FT = L.marker([-7.7655379340999025, 110.37239314883007]).bindPopup('<b>SGLC FT UGM</b><a href="https://maps.app.goo.gl/UVNY3QRrpzLBkWTE6" target="_blank">Lihat di Google Maps</a>'),
+        SV = L.marker([-7.773691118805759, 110.37243422716962]).bindPopup('<b>TILC FT UGM</b><a href="https://maps.app.goo.gl/4VMi2YXPSgwdTFA5A" target="_blank">Lihat di Google Maps</a>'),
+        FEB = L.marker([-7.7700812146816345, 110.37997636547311]).bindPopup('<b>FEB UGM</b><a href="https://maps.app.goo.gl/HTGNfLQQKX2Rbm5x7" target="_blank">Lihat di Google Maps</a>'),
+        FPA = L.marker([-7.768964998006432, 110.38117799967584]).bindPopup('<b>AGLC Faperta UGM</b><a href="https://maps.app.goo.gl/K3yp5FDUV5cYB1ZT8" target="_blank">Lihat di Google Maps</a>'),
+        FPT = L.marker([-7.767574505808825, 110.38627957616644]).bindPopup('<b>ASLC Fapet FT UGM</b><a href="https://maps.app.goo.gl/aMbLhyX3gfdNwv9K9" target="_blank">Lihat di Google Maps</a>');
 
-    var jogja = L.layerGroup([gunkid, sleman, kupro, mbantul, yog]);
+    var ugm = L.layerGroup([FT, SV, FEB, FPA, FPT]);
 
-    var overlayMaps = { "Jogja": jogja };
+    var overlayMaps = { "UGM": ugm };
 
     L.control.layers(baseMaps, overlayMaps).addTo(map);
+
 </script>
 
 </body>
