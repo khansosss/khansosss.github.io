@@ -1,194 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Landing Page & Resume</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <!-- Landing Page Section -->
-        <section id="landing-page" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
-            <h1>Khansa Puspitasari</h1>
-            <p>Ujian Tengah Semester Prak SIG Web</p>
-            <a class="btn btn-primary" href="#resume">Mulai</a>
-        </section>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>UTS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
+    <style>
+        #map { height: calc(100vh - 60px); }
+    </style>
+</head>
+<body>
 
-        <!-- UTS -->
-        <section id="UTS">
-            <div class="d-flex">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-primary flex-column">
-                    <a class="navbar-brand" href="#landing-page">Kembali ke Landing Page</a>
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="container-fluid p-4">
-                     <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- Praktikum-->
-            <section class="resume-section" id="github">
+<!-- Landing Page Section -->
+<section id="landing-page" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
+    <h1>Khansa Puspitasari</h1>
+    <p>Ujian Tengah Semester Prak SIG Web</p>
+    <a class="btn btn-primary" href="#resume">Mulai</a>
+</section>
+
+<!-- Navigation -->
+<section id="UTS">
+    <div class="d-flex">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary flex-column">
+            <a class="navbar-brand" href="#landing-page">Kembali ke Landing Page</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#Praktikum">Praktikum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Website">Website</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid p-4">
+            <!-- Praktikum Section -->
+            <section class="resume-section" id="Praktikum">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Github</h2>
                     <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            Tugas Minggu ke-2 
-                        </li>
-						<table style="width:70%">
-		
-						<tr>
-							<th>Materi</th>
-							
-						</tr>
-						<tr>
-							<td>Membuat halaman WEB sederhana</td>
-							
-						</tr>
-						<tr>
-							<td>Membuat halaman WEB menggunakan HTML dan CSS</td>
-							
-						</tr>
-						<tr>
-							<td>Membuat <i>Curriculum Vitae</i> menggunakan <i>wix.com</i></td>
-							
-						</tr>
-						</table>
-						
-						<li>
-                            <span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            Tugas Minggu ke-3
-                        </li>
-						<table style="width:67.5%">
-		
-						<tr>
-							<th>Materi</th>
-							
-						</tr>
-						<tr>
-							<td>Membuat halaman WEB Hitungan Fungsi Faktorial</td>
-							
-						</tr>
-						<tr>
-							<td>Membuat halaman WEB Validasi Password</td>
-							
-						</tr>
-						<tr>
-							<td>Membuat halaman WEB yang Memvalidasi Masukan dari Pengguna</i></td>
-							
-						</tr>
-						<tr>
-							<td>Membuat halaman WEB untuk Bilangan Prima</i></td>
-							
-						</tr>
-						<tr>
-							<td>Membuat halaman WEB untuk Bilangan Fibbonacci</i></td>
-							
-						</tr>
-						
-						<li>
-                            <span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            Tugas Minggu ke-5
-                        </li>
-						<table style="width:70%">
-		
-						<tr>
-							<th>Materi</th>
-							
-						</tr>
-						<tr>
-							<td>Membuat <i>Curriculum Vitae</i> menggunakan <i>Bootstrap</i></td>
-							
-						</tr>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            Tugas Minggu ke-6
-                        </li>
-						<table style="width:70%">
-		
-						<tr>
-							<th>Materi</th>
-							
-						</tr>
-						<tr>
-							<td>Membuat <i>Latihan Web GIS sederhana</i> menggunakan <i>Leaflet JS</i></td>
-							
-						</tr>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            Tugas Minggu ke-7
-                        </li>
-						<table style="width:70%">
-		
-						<tr>
-							<th>Materi</th>
-							
-						</tr>
-						<tr>
-							<td>Membuat <i>Latihan Web GIS sederhana</i> menggunakan <i>Basemap OSM dengan Leaflet JS</i></td>
-							
-						</tr>
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Tugas Minggu ke-2</li>
+                        <table class="table table-bordered w-75">
+                            <tr><th>Materi</th></tr>
+                            <tr><td>Membuat halaman WEB sederhana</td></tr>
+                            <tr><td>Membuat halaman WEB menggunakan HTML dan CSS</td></tr>
+                            <tr><td>Membuat <i>Curriculum Vitae</i> menggunakan <i>wix.com</i></td></tr>
+                        </table>
+
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Tugas Minggu ke-3</li>
+                        <table class="table table-bordered w-75">
+                            <tr><th>Materi</th></tr>
+                            <tr><td>Membuat halaman WEB Hitungan Fungsi Faktorial</td></tr>
+                            <tr><td>Membuat halaman WEB Validasi Password</td></tr>
+                            <tr><td>Membuat halaman WEB yang Memvalidasi Masukan dari Pengguna</td></tr>
+                            <tr><td>Membuat halaman WEB untuk Bilangan Prima</td></tr>
+                            <tr><td>Membuat halaman WEB untuk Bilangan Fibbonacci</td></tr>
+                        </table>
+
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Tugas Minggu ke-5</li>
+                        <table class="table table-bordered w-75">
+                            <tr><th>Materi</th></tr>
+                            <tr><td>Membuat <i>Curriculum Vitae</i> menggunakan <i>Bootstrap</i></td></tr>
+                        </table>
+
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Tugas Minggu ke-6</li>
+                        <table class="table table-bordered w-75">
+                            <tr><th>Materi</th></tr>
+                            <tr><td>Membuat <i>Latihan Web GIS sederhana</i> menggunakan <i>Leaflet JS</i></td></tr>
+                        </table>
+
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Tugas Minggu ke-7</li>
+                        <table class="table table-bordered w-75">
+                            <tr><th>Materi</th></tr>
+                            <tr><td>Membuat <i>Latihan Web GIS sederhana</i> menggunakan <i>Basemap OSM dengan Leaflet JS</i></td></tr>
+                        </table>
                     </ul>
+                </div>
+            </section>
+
+            <!-- Website Section -->
+            <section class="resume-section" id="Website">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Praktikum SIG Web</h2>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Teknik Geodesi UGM</li>
+                    </ul>
+                    <table class="table table-bordered w-75">
+                        <tr>
+                            <th></th>
+                            <th>Link</th>
+                        </tr>
+                        <tr>
+                            <td>Laman Website Departemen Teknik Geodesi UGM</td>
+                            <td><a href="https://geodesi.ugm.ac.id/" target="_blank">https://geodesi.ugm.ac.id/</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Tabel Identitas -->
+            <section class="resume-section" id="Tabel">
+                <div class="resume-section-content">
+                    <h2>Tabel</h2>
+                    <hr />
+                    <table class="table table-bordered w-50">
+                        <tr><th>Nama</th><th>NIM</th></tr>
+                        <tr><td>Khansa Puspitasari</td><td>22/499625/TK/54751</td></tr>
+                    </table>
                 </div>
             </section>
         </div>
-            <!-- Website-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Praktikum SIG Web</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                             <li>
-                            <span class="fa-li"><i class="fas fa-check-circle"></i></span>
-                            Teknik Geodesi UGM
-                        </li>
-						<table style="width:70%">
-		
-						<tr>
-							<th></th>
-							<th>Link</th>
-						</tr>
-						<tr>
-							<td>Laman <i> Website </i> Departemen <i>Teknik Geodesi UGM</i></td>
-							<td><a href="https://geodesi.ugm.ac.id/" target="_blank"></a></td>
-						</tr>
-                    </ul>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Tabel-->
-            <h2>Tabel</h2>
-            <hr width="100%" height="2px"></hr>
-            <table border="1" cellpadding="10">
-                <tr>
-                    <td>Nama</td>
-                    <td>NIM</td>
-                </tr>
-                <tr>
-                    <td>Khansa Puspitasari</td>
-                    <td>22/499625/TK/54751</td>
-                </tr>
-            </table>
-                </div>
-            </div>
-        </section>
+    </div>
+</section>
 
-        <!-- Bootstrap core JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+<!-- Peta -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">D.I. Yogyakarta</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<div id="map"></div>
+
+<!-- Leaflet JS dan Bootstrap JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+    var map = L.map('map').setView([-7.79558, 110.36949], 10);
+
+    var esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(map);
+    var carto = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        subdomains: 'abcd', maxZoom: 19
+    });
+
+    var baseMaps = { "Citra Satelit": esri, "Carto": carto };
+
+    var gunkid = L.marker([-7.96, 110.60]).bindPopup('Gunung Kidul'),
+        sleman = L.marker([-7.71, 110.35]).bindPopup('Sleman'),
+        kupro = L.marker([-7.85, 110.15]).bindPopup('Kulon Progo'),
+        mbantul = L.marker([-7.88, 110.33]).bindPopup('Bantul'),
+        yog = L.marker([-7.79, 110.39]).bindPopup('Yogyakarta');
+
+    var jogja = L.layerGroup([gunkid, sleman, kupro, mbantul, yog]);
+
+    var overlayMaps = { "Jogja": jogja };
+
+    L.control.layers(baseMaps, overlayMaps).addTo(map);
+</script>
+
+</body>
 </html>
