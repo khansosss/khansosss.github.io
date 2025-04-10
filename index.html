@@ -21,11 +21,11 @@
 <section id="landing-page" class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-light">
     <h1>Khansa Puspitasari</h1>
     <p>Ujian Tengah Semester Prak SIG Web</p>
-    <a class="btn btn-primary" href="Praktikum">Mulai</a>
+    <a class="btn btn-primary" href="">Scroll</a>
 </section>
 
 <!-- Navigation -->
-<section id="UTS">
+<section id="navigation">
     <div class="d-flex">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary flex-column">
             <a class="navbar-brand" href="#landing-page">Kembali ke Landing Page</a>
@@ -86,9 +86,9 @@
             <!-- Website Section -->
             <section class="uts-section" id="Website">
                 <div class="uts-section-content">
-                    <h2 class="mb-5">Praktikum SIG Web</h2>
+                    <h2 class="mb-5"></h2>
                     <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check-circle"></i></span> Teknik Geodesi UGM</li>
+                        <li><span class="fa-li"></span> Teknik Geodesi UGM</li>
                     </ul>
                     <table class="table table-bordered w-75">
                         <tr>
@@ -104,14 +104,37 @@
             </section>
 
             <!-- Tabel Identitas -->
-            <section class="resume-section" id="Tabel">
-                <div class="resume-section-content">
+            <section class="uts-section" id="Tabel">
+                <div class="uts-section-content">
                     <h2>Tabel</h2>
                     <hr />
                     <table class="table table-bordered w-50">
                         <tr><th>Nama</th><th>NIM</th></tr>
                         <tr><td>Khansa Puspitasari</td><td>22/499625/TK/54751</td></tr>
                     </table>
+                </div>
+            </section>
+            <!-- Validasi -->
+            <section class="uts-section" id="Validasi">
+                <div class="uts-section-content">
+                    <h1>Validasi input</h1>
+                        <p>Masukkan nama, password dan alamat email anda :</p>	
+                        Nama: <input type="text" id="nama" style="margin-left: 34px; margin-bottom: 10px;"> <br>
+                        Password: <input type="password" id="pass"
+	                    style="margin-left: 10px; margin-bottom: 10px"> <br>
+
+		                E-mail: <input type="email" id="email" style="margin-left: 32px; margin-bottom: 10px"> <br>
+
+		                <button onclick="klik()">Klik</button>
+                    <script>
+		                function klik(){
+			            var pw, check, txt;
+			            var check = "Selesai";
+			            pw = document.getElementById("pass").value;
+
+			                if (pw === check) {txt = "password benar";alert(txt);}
+                            else{txt = "password salah";alert(txt);}}
+                    </script>
                 </div>
             </section>
         </div>
@@ -146,11 +169,11 @@
 
     var baseMaps = { "Citra Satelit": esri, "Carto": carto };
 
-    var FT = L.marker([-7.7655379340999025, 110.37239314883007]).bindPopup('<b>SGLC FT UGM</b><a href="https://maps.app.goo.gl/UVNY3QRrpzLBkWTE6" target="_blank">Lihat di Google Maps</a>'),
-        SV = L.marker([-7.773691118805759, 110.37243422716962]).bindPopup('<b>TILC FT UGM</b><a href="https://maps.app.goo.gl/4VMi2YXPSgwdTFA5A" target="_blank">Lihat di Google Maps</a>'),
-        FEB = L.marker([-7.7700812146816345, 110.37997636547311]).bindPopup('<b>FEB UGM</b><a href="https://maps.app.goo.gl/HTGNfLQQKX2Rbm5x7" target="_blank">Lihat di Google Maps</a>'),
-        FPA = L.marker([-7.768964998006432, 110.38117799967584]).bindPopup('<b>AGLC Faperta UGM</b><a href="https://maps.app.goo.gl/K3yp5FDUV5cYB1ZT8" target="_blank">Lihat di Google Maps</a>'),
-        FPT = L.marker([-7.767574505808825, 110.38627957616644]).bindPopup('<b>ASLC Fapet FT UGM</b><a href="https://maps.app.goo.gl/aMbLhyX3gfdNwv9K9" target="_blank">Lihat di Google Maps</a>');
+    var FT = L.marker([-7.7655379340999025, 110.37239314883007]).bindPopup('<b>SGLC FT UGM</b><a href="https://maps.app.goo.gl/UVNY3QRrpzLBkWTE6" target="_blank"> Link Maps</a>'),
+        SV = L.marker([-7.773691118805759, 110.37243422716962]).bindPopup('<b>TILC FT UGM</b><a href="https://maps.app.goo.gl/4VMi2YXPSgwdTFA5A" target="_blank"> Link Maps</a>'),
+        FEB = L.marker([-7.7700812146816345, 110.37997636547311]).bindPopup('<b>FEB UGM</b><a href="https://maps.app.goo.gl/HTGNfLQQKX2Rbm5x7" target="_blank"> Link Maps</a>'),
+        FPA = L.marker([-7.768964998006432, 110.38117799967584]).bindPopup('<b>AGLC Faperta UGM</b><a href="https://maps.app.goo.gl/K3yp5FDUV5cYB1ZT8" target="_blank"> Link Maps</a>'),
+        FPT = L.marker([-7.767574505808825, 110.38627957616644]).bindPopup('<b>ASLC Fapet FT UGM</b><a href="https://maps.app.goo.gl/aMbLhyX3gfdNwv9K9" target="_blank"> Link Maps</a>');
 
     var ugm = L.layerGroup([FT, SV, FEB, FPA, FPT]);
 
